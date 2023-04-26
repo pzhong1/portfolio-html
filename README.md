@@ -23,4 +23,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ## The URL of the GitHub repository that contains code  
 https://github.com/pzhong1/challenge02.git  
 ## The URL of the deployed application  
-https://pzhong1.github.io/challenge02/
+
