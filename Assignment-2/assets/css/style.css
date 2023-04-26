@@ -1,0 +1,218 @@
+ /*remove the defult setting*/
+ * {
+     color: #2689e7;
+     box-sizing: border-box;
+     margin: 0;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ body {
+     background-color: #cd853f;
+ }
+
+ h1 {
+     font-size: 40px;
+     /*adjusted font-size to the size i want*/
+     margin: -10px;
+     position: absolute;
+     color: blanchedalmond;
+ }
+
+ h2 {
+     font-size: 35px;
+     text-align: center;
+     margin-top: 10px;
+ }
+
+ p {
+     padding-top: 10px;
+     text-align: center;
+ }
+
+
+ .img {
+     position: absolute;
+     /*child position, so that i can stack this elements on top of parent element*/
+     bottom: 35%;
+     right: 50%;
+ }
+
+ /*adjust margin*/
+ .card-img {
+     margin-left: 20px;
+ }
+
+ /*adding title to image*/
+ .card-img p {
+     padding: 20px;
+     background: #9ec4e8;
+     color: #fff;
+ }
+
+ /*adding solid border around the image*/
+ .border-img {
+     border: 5px solid white;
+     cursor: pointer
+ }
+
+ .header-intro {
+     font-size: 23px;
+     position: absolute;
+     /*child position, so that i can stack this elements on top of parent element*/
+     bottom: 50%;
+     right: 27%
+ }
+
+ .top-container {
+     position: relative;
+     /*this is parent position */
+     z-index: -1;
+ }
+
+/*navbar section*/
+ .container-nav {
+     padding: 40px;
+     background-color: rgb(93, 59, 7);
+ }
+
+ .container-nav nav {
+     float: right;
+     /*move the nav to the right side*/
+     font-size: 20px;
+
+ }
+
+ .container-nav nav ul {
+     list-style: none;
+     /*remove the bulets*/
+     display: flex;
+ }
+
+ .container-nav nav ul li {
+     margin-right: 30px;
+     display: inline-block;
+
+ }
+
+ #about {
+     padding: 118px;
+     background-color: rgb(93, 59, 7);
+     margin: -4px;
+
+ }
+
+ #work {
+     /* Turns this element into a flexbox */
+     display: flex;
+     /* Forces elements to the next line if they don't fit */
+     justify-content: space-around;
+     flex-wrap: wrap;
+     margin-top: 4%;
+ }
+
+ .card-horiseon p {
+     margin-bottom: 30px;
+     padding: 20px;
+     background: #9ec4e8;
+     color: white;
+     border-style: solid;
+ }
+
+ #card {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+
+ }
+
+
+ /*hover*/
+ nav a:hover {
+     background-color: rgb(129, 127, 219);
+ }
+
+ /* navbar text color*/
+ a {
+     color: aqua;
+ }
+
+ #contact-info {
+     text-align: center;
+     color: lightblue;
+     background-color: rgb(93, 59, 7);
+ }
+
+ #contact-info h2 {
+     margin-top: 10px;
+     padding-bottom: 45px;
+ }
+
+ .contact-info-flex {
+     display: flex;
+     align-content: center;
+     justify-content: space-evenly;
+     margin: 30px;
+ }
+
+ footer {
+     padding: 10px;
+ }
+
+ /*media*/
+ /*/* On screens that are 640px wide or less, make the columns stack on top of each other instead of next to each other */
+ @media (max-width: 640px) {
+     .container {
+         text-align: center;
+     }
+
+     .container-nav {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     nav ul {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     nav ul li {
+         margin: 10px 0px;
+         /*adjust the spaces between nav text*/
+         justify-content: center;
+         width: 100%;
+         float: none;
+
+     }
+
+     h1 {
+         width: 100%;
+         /*center my h1*/
+         float: none;
+         position: static;
+     }
+
+     body {
+         background-color: rgb(93, 59, 7);
+     }
+
+     .card-horiseon {
+         width: 100%;
+         height: auto;
+         object-fit: contain;
+
+     }
+ }
+
+ /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+     .border-img {
+         width: 100%;
+     }
+
+     /*On screens that are 600px wide or less, make the TEXT that fit into smaller screen*/
+     .contact-info-flex {
+         flex-direction: column;
+         text-align: center;
+         width: 100%;
+     }
+ }
