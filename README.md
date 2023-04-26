@@ -1,4 +1,4 @@
-## task  
+## Task  
 Build a portfolio page that meet all the requirements.  
 
 ## User Story  
